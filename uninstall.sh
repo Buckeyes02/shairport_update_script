@@ -16,6 +16,7 @@ fi
 # Remove Old Service Files
 rm -f /etc/systemd/system/shairport-sync.service
 rm -f /etc/systemd/user/shairport-sync.service
+rm -f /lib/systemd/system/shairport-sync.service
 rm -f /lib/systemd/user/shairport-sync.service
 rm -f /etc/init.d/shairport-sync
 
