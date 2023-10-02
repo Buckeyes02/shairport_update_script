@@ -1,6 +1,8 @@
 
 # Shairport Sync update script for your Raspberry Pi
 
+*** Clone from https://github.com/Weidav/shairport_update_script to customize for my own use ***
+
 ## Introduction
 
 With the new AirPlay 2 support Shairport Sync gets updated regularly and it is a bit of a hassle to update it manually. This two scripts will do it for you if you are using a Raspberry Pi.
