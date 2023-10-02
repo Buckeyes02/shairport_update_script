@@ -12,11 +12,12 @@ apt install --no-install-recommends build-essential git autoconf automake libtoo
     libplist-dev libsodium-dev libavutil-dev libavcodec-dev libavformat-dev uuid-dev libgcrypt-dev xxd
 
 # Update NQPTP
-if rm -f /lib/systemd/system/nqptp.service; then
-    echo "Successfully deleted old NQPTP copy"
-else
-    echo "Could not delet old NQPTP copy" >&2
-fi
+# Moved to uninstall.sh
+#if rm -f /lib/systemd/system/nqptp.service; then
+#    echo "Successfully deleted old NQPTP copy"
+#else
+#    echo "Could not delet old NQPTP copy" >&2
+#fi
 
 rm -rf nqptp
 git clone https://github.com/mikebrady/nqptp.git
