@@ -19,6 +19,10 @@ rm -f /etc/systemd/user/shairport-sync.service
 rm -f /lib/systemd/system/shairport-sync.service
 rm -f /lib/systemd/user/shairport-sync.service
 rm -f /etc/init.d/shairport-sync
+rm -f /lib/systemd/system/nqptp.service
+rm -f /usr/local/lib/systemd/system/nqptp.service
+
+systemctl daemon-reload
 
 # Reboot after Cleaning Up
 echo "Rebooting, reconnect to your pi and run the update.sh script"
