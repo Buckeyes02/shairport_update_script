@@ -3,6 +3,7 @@
 # run script with root privileges
 
 # config file won't be deletet, but we back it up anyway
+rm -f /etc/shairport-sync.conf.bak
 cp /etc/shairport-sync.conf /etc/shairport-sync.conf.bak
 
 # Remove Old Copies of Shairport Sync
@@ -23,6 +24,9 @@ rm -f /lib/systemd/system/nqptp.service
 rm -f /usr/local/lib/systemd/system/nqptp.service
 
 systemctl daemon-reload
+
+# Remove Squeezelite
+apt remove squeezelite
 
 # Reboot after Cleaning Up
 echo "Rebooting, reconnect to your pi and run the update.sh script"
