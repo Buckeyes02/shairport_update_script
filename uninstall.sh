@@ -26,7 +26,7 @@ rm -f /usr/local/lib/systemd/system/nqptp.service
 systemctl daemon-reload
 
 # Remove Squeezelite
-apt remove squeezelite
+apt remove -y squeezelite
 
 # Reboot after Cleaning Up
 echo "Rebooting, reconnect to your pi and run the update.sh script"
